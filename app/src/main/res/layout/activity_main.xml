@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F33A8F"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello, I am AnA"-->
+        <!--android:textSize="60dp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/eyes_gif_2"
+        />
+
+
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/Forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"/>
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/Backward"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward"/>
+
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/Stop"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"/>
+
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/Left"
+        android:layout_marginLeft="450dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"/>
+
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/Right"
+        android:layout_marginLeft="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"/>
+
+    <Button
+
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/show_ip"
+        android:layout_marginLeft="750dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/ip"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World......"
+        android:layout_alignBottom="@+id/anim"/>
+    <Button
+
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/anim"
+        android:id="@+id/ip_close"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"/>
+
+
+
+</RelativeLayout>
